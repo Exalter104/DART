@@ -3,10 +3,10 @@
 
 Functions are the block of code that performs a specific task. Here are different types of functions:
 
-No Parameter And No Return Type
-Parameter And No Return Type
-No Parameter And Return Type
-Parameter And Return Type
+>> No Parameter And No Return Type
+>> Parameter And No Return Type
+>> No Parameter And Return Type
+>> Parameter And Return Type
 
 */
 void main() {

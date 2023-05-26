@@ -11,7 +11,7 @@ Note: The main objective of the function is DRY(Don’t Repeat Yourself).
 
 
 Avoid Code Repetition
-Easy to divide the complex program into smaller parts
+Easy to divide the complex program into smaller out Part functions
 Helps to write a clean code
 
 ------------------------------------->Syntex<----------------------------------
@@ -50,27 +50,27 @@ function parameter.
 import 'dart:io';
 
 void main() {
-//Example 1: Function That Prints Name
+//EXAMPLE 1: Function That Prints Name
 // name();
 
-// Example 2: Function To Find Sum of Two Numbers
+// EXAMPLE 2: Function To Find Sum of Two Numbers
 //sum();
 
-//Example 3: Function That Find Simple Interest
+//EXAMPLE 3: Function That Find Simple Interest
 // simpleIntrest();
 
-//Challenge:Create a function that finds a cube of numbers.
+//CHALLENGE:Create a function that finds a cube of numbers.
 // cube();
 }
 
-//Example 1: Part
+//EXAMPLE 1: out Part function
 name() {
   print("Enter your Name : ");
   String? userName = stdin.readLineSync();
   print("Your good Name is : $userName");
 }
 
-//Example 2: Part
+//EXAMPLE 2: out Part function
 sum() {
   print("Enter First Number :");
   String? num1 = stdin.readLineSync();
@@ -83,7 +83,7 @@ sum() {
   print("The Cube of a number is : $add");
 }
 
-//Example 3: Part
+//EXAMPLE 3: out Part function
 void simpleIntrest() {
   print("Enter Principle figure :");
   String? num1 = stdin.readLineSync();
@@ -101,7 +101,7 @@ void simpleIntrest() {
   print("The Totle Intreset is : $calculate");
 }
 
-//Example 4: Part
+//EXAMPLE 4:  out Part function function
 cube() {
   print("Enter cube Number :");
   String? num1 = stdin.readLineSync();
