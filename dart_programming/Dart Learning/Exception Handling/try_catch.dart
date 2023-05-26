@@ -28,13 +28,14 @@ Catch--->When you are uncertain about what kind of exception a program produces,
 */
 void main() {
   try {
-    sheraz(12);
+    sherazKhan(-12);
   } catch (e) {
     print("No its not age of Sheraz");
   }
 }
-void sheraz(int age) {
-  if (age > 20 && age < 30) {
+
+void sherazKhan(int age) {
+  if (age < 0) {
     throw FormatException();
   }
 }
