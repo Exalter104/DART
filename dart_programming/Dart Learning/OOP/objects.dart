@@ -52,33 +52,56 @@ class Bycycle {
 
 //*MAIN METHOD
 void main() {
+//*EXAMPLE -1
   // Bycycle object = Bycycle();
   // object.color = "Red";
   // object.size = 23;
   // object.currentSpeed;
   // object.changeGear(34);
   // object.display();
-
-  Camera object1 = Camera();
-  object1.displayCamera();
-  Camera object2 = Camera();
-  object2.displayCamera();
+//*CHALLENGE -1
+  // Camera object1 = Camera();
+  // object1.displayCamera();
+  // Camera object2 = Camera();
+  // object2.displayCamera();
+//*CHALLENGE -2
+  Home object = Home();
+  object.displayRoom("Sheraz","khilji",12);
 }
-//*CHALLENG :
+//*CHALLENG -1:
 //Create a class Camera with properties: name, color, megapixel. Create a method
 // called display which prints out the values of the three properties. Create two
 // objects of the class Camera and call the method display.
 //*CLASS -2
 
 class Camera {
-  String? color="red";
-  String? name="Canon";
-  int? megaPixels=50;
+  String? color = "red";
+  String? name = "Canon";
+  int? megaPixels = 50;
 
 //*METHOD -2
   void displayCamera() {
     print("The Color of Camera is : $color");
     print("The Name of Camera is : $name");
     print("The MegaPixels of Camera is : $megaPixels");
+  }
+}
+
+//*CHALLENG -2 :
+//Create a class Camera with properties: name, color, megapixel. Create a method
+// called display which prints out the values of the three properties. Create two
+// objects of the class Camera and call the method display.
+//*CLASS -2
+
+class Home {
+  String? address;
+  String? name;
+  int? numofRooms;
+
+//*METHOD -2
+  void displayRoom( address,name,numofRooms) {
+    print("The Address of Room is : $address");
+    print("The Name of Room is : $name");
+    print("The number of Room is : $numofRooms");
   }
 }

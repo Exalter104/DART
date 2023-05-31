@@ -1,8 +1,8 @@
 // ignore_for_file: non_constant_identifier_names
 
 /*
+*------------------------------------->CLASS IN DART<----------------------------
 
-------------------------------------->CLASS IN DART<----------------------------
 *DEFINITION OF CLASS :
 --------------------
 "
@@ -31,9 +31,9 @@ class ClassName {
 
 //*PRACTICAL WORK
 
-//*Example 1: Declaring A Class In Dart
-
 //*CLASS -1
+
+//Example 1: Declaring A Class In Dart
 
 class Exarth {
   String? CTO;
@@ -49,9 +49,11 @@ class Exarth {
   }
 }
 
-//*Example 2: Declaring Area Class In Dart
+
 
 //*CLASS -2
+
+//Example 2: Declaring Area Class In Dart
 
 class Area {
   int? length;
