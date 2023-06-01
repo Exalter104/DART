@@ -36,11 +36,16 @@ class ClassName {
 1: The constructor’s name should be the same as the class name.
 2: Constructor doesn’t have any return type.
 
+*Named Constructors
+-------------------
+Named constructors improves code readability. It is useful when you want 
+to create multiple constructors with the same name.
 */
 
 //MAIN Method
 void main() {
   print("---------------Example 1-----------------------");
+
 //*Example 1: How To Declare Constructor In Dart
   Student object = Student("Sheraz", 24, 160);
   print("Name: ${object.stdName}");
@@ -48,6 +53,7 @@ void main() {
   print("Roll Number: ${object.rollNumber}");
 
   print("---------------Example 2-----------------------");
+
 //*Example 2: Constructor In Dart
   Teacher object1 = Teacher(
     "Sheraz",
@@ -63,17 +69,38 @@ void main() {
   );
   object1.display();
   object2.display();
+
   print("---------------Example 3-----------------------");
+
 //*Example 3: Write Constructor Single Line
   Person person = Person("John", 30, "Maths", 50000.0);
   person.display();
+
   print("---------------Example 4-----------------------");
+
 //*Example 4: Constructor With Named Parameters
   Chair object4 = Chair(color: "red", name: "sheraz");
   object4.displayChair();
-//*CHAllENGE
+  print("---------------Example 5-----------------------");
+
+//*Example 5: Named Constructor In Dart
+//NAMED Constructor is
+  Animal animalObject = Animal.namedConstructor("GULTAIR", 24);
+  Animal animalObject2 = Animal.namedConstructor2("GULDANG");
+  print("The First Dog name is : ${animalObject.name} ");
+  print("The First Dog age is : ${animalObject.age} ");
+  print("The Second Dog name is : ${animalObject2.name} ");
+
+  print("---------------CHALLENGE-1-----------------------");
+
   Patient patientibj = Patient(age: 23, name: "Sheraz", diesease: "Hyptaitus");
   patientibj.displayDiesease();
+
+  print("---------------CHALLENGE-2-----------------------");
+  Car carobject = Car.nameConstructor("Honda civic reborn", "Black");
+  Car carobject2 = Car("Black", "Elentra", 20000);
+  carobject.displayCar();
+  carobject2.displayCar();
 }
 
 //*CLASS -1
@@ -144,7 +171,27 @@ class Chair {
   }
 }
 
-//*CHALLENGE -5
+//*CLASS -5
+class Animal {
+  String? name;
+  int? age;
+
+//DEFAULT Constructor
+  Animal() {
+    print("Its a Default Constructors");
+  }
+//NAMED constructor
+  Animal.namedConstructor(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+//NAMED 2 constructor
+  Animal.namedConstructor2(String name) {
+    this.name = name;
+  }
+}
+
+//*CHALLENGE -Single line Constructor
 class Patient {
   String? name;
   int? age;
@@ -156,4 +203,22 @@ class Patient {
     print("The Patient name is :$name");
     print("The Diease of Patient is : $diesease");
   }
+}
+
+//*CHALLENGE -Named with multiple Constructor
+class Car {
+  String? name;
+  String? color;
+  int? prize;
+
+  void displayCar() {
+    print("The Name of the Car is :$name");
+    print("The Color of the Car is :$color");
+    print("The Prize of the Car is :$prize");
+  }
+
+//Simple constructor
+  Car(this.color, this.name, this.prize);
+//Name Constructor
+  Car.nameConstructor(this.name, this.color);
 }
