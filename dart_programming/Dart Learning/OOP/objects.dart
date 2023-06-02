@@ -66,7 +66,7 @@ void main() {
   // object2.displayCamera();
 //*CHALLENGE -2
   Home object = Home();
-  object.displayRoom("Sheraz","khilji",12);
+  object.displayRoom("Sheraz", "khilji", 12);
 }
 //*CHALLENG -1:
 //Create a class Camera with properties: name, color, megapixel. Create a method
@@ -99,7 +99,7 @@ class Home {
   int? numofRooms;
 
 //*METHOD -2
-  void displayRoom( address,name,numofRooms) {
+  void displayRoom(address, name, numofRooms) {
     print("The Address of Room is : $address");
     print("The Name of Room is : $name");
     print("The number of Room is : $numofRooms");
