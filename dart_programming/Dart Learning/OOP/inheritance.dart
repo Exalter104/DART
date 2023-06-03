@@ -42,6 +42,7 @@ The ChildClass inherits the properties and methods of the ParentClass.
 *-------------------
 Whenever you use inheritance, it always create a is-a relation between the parent
 and child class like Student is a Person, Truck is a Vehicle, Cow is a Animal etc.
+*--------------------------> INHERITANCE OF CONSTRUCTOR IN DART<------------------------------
 
 */
 
