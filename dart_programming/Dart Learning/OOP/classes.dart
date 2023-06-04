@@ -49,10 +49,7 @@ class Exarth {
   }
 }
 
-
-
 //*CLASS -2
-
 //Example 2: Declaring Area Class In Dart
 
 class Area {

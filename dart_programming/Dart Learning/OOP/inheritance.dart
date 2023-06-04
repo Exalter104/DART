@@ -42,7 +42,21 @@ The ChildClass inherits the properties and methods of the ParentClass.
 *-------------------
 Whenever you use inheritance, it always create a is-a relation between the parent
 and child class like Student is a Person, Truck is a Vehicle, Cow is a Animal etc.
-*--------------------------> INHERITANCE OF CONSTRUCTOR IN DART<------------------------------
+
+*--------------------------> INHERITANCE OF CONSTRUCTOR IN DART<----------------
+Inheritance of constructor in Dart is a process of inheriting the constructor of
+the parent class to the child class. It is a way of reusing the code of the parent
+class.
+
+*SYNTEX:
+*-------
+ParentConstructor(string name, int age){}
+childclass Constructor(same as data type of parent=> String name ,int age):super( age, name){}
+
+*Super()
+*-------
+"Super is used to refer to the parent class. It is used to call the parent class’s
+properties and methods."
 
 */
 
@@ -74,10 +88,13 @@ void main() {
   // multilevelObject.displayMultilevel();
 
 //*HIERARCHICAL inheritance
-  Triangle triObject = Triangle();
-  triObject.diameter1 = 23.2;
-  triObject.diameter2 = 22.66;
-  triObject.area();
+  // Triangle triObject = Triangle();
+  // triObject.diameter1 = 23.2;
+  // triObject.diameter2 = 22.66;
+  // triObject.area();
+
+  Childclass chObject = Childclass("26", 24, 1212, 2323);
+  print(chObject);
 }
 
 //*EXAMPLE-1 CLASS:
@@ -102,23 +119,23 @@ class Student extends Person {
 }
 
 //*SINGLE inheritance Classes
-// class Car {
-//   String? carName;
-//   String? model;
-//   void displayCarInfo() {
-//     print("The car name is :$carName");
-//     print("The car model is :$model");
-//   }
-// }
+class Car {
+  String? carName;
+  String? model;
+  void displayCarInfo() {
+    print("The car name is :$carName");
+    print("The car model is :$model");
+  }
+}
 
-// class SingleInheritance extends Car {
-//   String? color;
-//   void displayInheritance() {
-//     print("The color of the car is :$color");
-//super : is use for calling a method of a parent class
-//     super.displayCarInfo();
-//   }
-// }
+class SingleInheritance extends Car {
+  String? color;
+  void displayInheritance() {
+    print("The color of the car is :$color");
+//*super : is use for calling a method of a parent class
+    super.displayCarInfo();
+  }
+}
 
 //*MULTILEVEL inheritance Classes
 
@@ -164,8 +181,28 @@ class Rectangle extends Shape {
 }
 
 class Triangle extends Rectangle {
+  @override
   void area() {
     print("The area of the triangle is :${diameter1! * diameter2! * 0.5}");
   }
 }
 
+//*INHERITANCE Of Constructor
+class InhertanceConstructor {
+  // Constructor
+  InhertanceConstructor(String name, int age, int add) {
+    print("parent Constructor");
+    print("The Parent Classname is :$name");
+    print("The Parent Class age is :$age");
+    print("The Parent Class age is :$add");
+  }
+}
+
+class Childclass extends InhertanceConstructor {
+  int additional;
+  Childclass(String name, int age, int add, this.additional)
+      : super(name, add, age) {
+    print("The additional child class is ;$additional");
+    print("child Constructor");
+  }
+}
