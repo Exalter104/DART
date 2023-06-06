@@ -26,9 +26,7 @@ one interface like class sheraz implents fluter1,flutter2 etc}"
 
 *Syntax Multiple Interfaces:
 *--------------------------
-*class ClassName implements interface1,interfac2,interface3{
-                    interface Code
-*}
+*class ClassName implements interface1,interfac2,interface3{}
  
 */
 
